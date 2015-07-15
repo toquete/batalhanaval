@@ -5,6 +5,10 @@
  */
 package batalhanaval;
 
+import java.util.Iterator;
+import java.util.List;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author User
@@ -79,15 +83,27 @@ public class Tela extends javax.swing.JFrame {
 
     setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
     setTitle("Batalha Naval");
+    setFocusCycleRoot(false);
+    setLocation(new java.awt.Point(0, 0));
     getContentPane().setLayout(new java.awt.GridLayout(7, 7));
 
-    jButton1.setText("jButton1");
+    jButton1.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton1.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton1ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton1);
 
-    jButton2.setText("jButton1");
+    jButton2.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton2.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton2ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton2);
 
-    jButton3.setText("jButton1");
+    jButton3.setPreferredSize(new java.awt.Dimension(50, 50));
     jButton3.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         jButton3ActionPerformed(evt);
@@ -95,150 +111,720 @@ public class Tela extends javax.swing.JFrame {
     });
     getContentPane().add(jButton3);
 
-    jButton4.setText("jButton1");
+    jButton4.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton4.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton4ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton4);
 
-    jButton5.setText("jButton1");
+    jButton5.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton5.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton5ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton5);
 
-    jButton6.setText("jButton1");
+    jButton6.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton6.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton6ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton6);
 
-    jButton7.setText("jButton1");
+    jButton7.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton7.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton7ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton7);
 
-    jButton8.setText("jButton1");
+    jButton8.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton8.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton8ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton8);
 
-    jButton9.setText("jButton1");
+    jButton9.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton9.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton9ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton9);
 
-    jButton10.setText("jButton1");
+    jButton10.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton10.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton10ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton10);
 
-    jButton11.setText("jButton1");
+    jButton11.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton11.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton11ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton11);
 
-    jButton12.setText("jButton1");
+    jButton12.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton12.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton12ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton12);
 
-    jButton13.setText("jButton1");
+    jButton13.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton13.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton13ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton13);
 
-    jButton14.setText("jButton1");
+    jButton14.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton14.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton14ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton14);
 
-    jButton15.setText("jButton1");
+    jButton15.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton15.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton15ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton15);
 
-    jButton16.setText("jButton1");
+    jButton16.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton16.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton16ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton16);
 
-    jButton17.setText("jButton1");
+    jButton17.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton17.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton17ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton17);
 
-    jButton18.setText("jButton1");
+    jButton18.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton18.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton18ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton18);
 
-    jButton19.setText("jButton1");
+    jButton19.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton19.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton19ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton19);
 
-    jButton20.setText("jButton1");
+    jButton20.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton20.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton20ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton20);
 
-    jButton21.setText("jButton1");
+    jButton21.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton21.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton21ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton21);
 
-    jButton22.setText("jButton1");
+    jButton22.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton22.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton22ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton22);
 
-    jButton23.setText("jButton1");
+    jButton23.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton23.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton23ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton23);
 
-    jButton24.setText("jButton1");
+    jButton24.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton24.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton24ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton24);
 
-    jButton25.setText("jButton1");
+    jButton25.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton25.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton25ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton25);
 
-    jButton26.setText("jButton1");
+    jButton26.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton26.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton26ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton26);
 
-    jButton27.setText("jButton1");
+    jButton27.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton27.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton27ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton27);
 
-    jButton28.setText("jButton1");
+    jButton28.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton28.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton28ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton28);
 
-    jButton29.setText("jButton1");
+    jButton29.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton29.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton29ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton29);
 
-    jButton30.setText("jButton1");
+    jButton30.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton30.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton30ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton30);
 
-    jButton31.setText("jButton1");
+    jButton31.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton31.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton31ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton31);
 
-    jButton32.setText("jButton1");
+    jButton32.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton32.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton32ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton32);
 
-    jButton33.setText("jButton1");
+    jButton33.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton33.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton33ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton33);
 
-    jButton34.setText("jButton1");
+    jButton34.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton34.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton34ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton34);
 
-    jButton35.setText("jButton1");
+    jButton35.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton35.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton35ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton35);
 
-    jButton36.setText("jButton1");
+    jButton36.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton36.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton36ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton36);
 
-    jButton37.setText("jButton1");
+    jButton37.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton37.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton37ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton37);
 
-    jButton38.setText("jButton1");
+    jButton38.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton38.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton38ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton38);
 
-    jButton39.setText("jButton1");
+    jButton39.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton39.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton39ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton39);
 
-    jButton40.setText("jButton1");
+    jButton40.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton40.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton40ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton40);
 
-    jButton41.setText("jButton1");
+    jButton41.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton41.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton41ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton41);
 
-    jButton42.setText("jButton1");
+    jButton42.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton42.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton42ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton42);
 
-    jButton43.setText("jButton1");
+    jButton43.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton43.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton43ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton43);
 
-    jButton44.setText("jButton1");
+    jButton44.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton44.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton44ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton44);
 
-    jButton45.setText("jButton1");
+    jButton45.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton45.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton45ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton45);
 
-    jButton46.setText("jButton1");
+    jButton46.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton46.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton46ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton46);
 
-    jButton47.setText("jButton1");
+    jButton47.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton47.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton47ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton47);
 
-    jButton48.setText("jButton1");
+    jButton48.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton48.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton48ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton48);
 
-    jButton49.setText("jButton1");
+    jButton49.setPreferredSize(new java.awt.Dimension(50, 50));
+    jButton49.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton49ActionPerformed(evt);
+      }
+    });
     getContentPane().add(jButton49);
 
     pack();
+    setLocationRelativeTo(null);
   }// </editor-fold>//GEN-END:initComponents
 
   private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-    // TODO add your handling code here:
+    if (verificarPalpite(3)){
+      jButton3.setText("X");
+      jButton3.setEnabled(false);
+    }
   }//GEN-LAST:event_jButton3ActionPerformed
+
+  private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
+    if (verificarPalpite(36)){
+      jButton36.setText("X");
+      jButton36.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton36ActionPerformed
+
+  private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
+    if (verificarPalpite(37)){
+      jButton37.setText("X");
+      jButton37.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton37ActionPerformed
+
+  private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+    if (verificarPalpite(24)){
+      jButton24.setText("X");
+      jButton24.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton24ActionPerformed
+
+  private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+    if (verificarPalpite(18)){
+      jButton18.setText("X");
+      jButton18.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton18ActionPerformed
+
+  private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+    if (verificarPalpite(12)){
+      jButton12.setText("X");
+      jButton12.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton12ActionPerformed
+
+  private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+    if (verificarPalpite(13)){
+      jButton13.setText("X");
+      jButton13.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton13ActionPerformed
+
+  private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
+    if (verificarPalpite(34)){
+      jButton34.setText("X");
+      jButton34.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton34ActionPerformed
+
+  private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    if (verificarPalpite(1)){
+      jButton1.setText("X");
+      jButton1.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton1ActionPerformed
+
+  private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+    if (verificarPalpite(15)){
+      jButton15.setText("X");
+      jButton15.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton15ActionPerformed
+
+  private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    if (verificarPalpite(2)){
+      jButton2.setText("X");
+      jButton2.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton2ActionPerformed
+
+  private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    if (verificarPalpite(4)){
+      jButton4.setText("X");
+      jButton4.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton4ActionPerformed
+
+  private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    if (verificarPalpite(5)){
+      jButton5.setText("X");
+      jButton5.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton5ActionPerformed
+
+  private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    if (verificarPalpite(6)){
+      jButton6.setText("X");
+      jButton6.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton6ActionPerformed
+
+  private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    if (verificarPalpite(7)){
+      jButton7.setText("X");
+      jButton7.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton7ActionPerformed
+
+  private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    if (verificarPalpite(8)){
+      jButton8.setText("X");
+      jButton8.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton8ActionPerformed
+
+  private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+    if (verificarPalpite(9)){
+      jButton9.setText("X");
+      jButton9.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton9ActionPerformed
+
+  private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    if (verificarPalpite(10)){
+      jButton10.setText("X");
+      jButton10.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton10ActionPerformed
+
+  private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+    if (verificarPalpite(11)){
+      jButton11.setText("X");
+      jButton11.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton11ActionPerformed
+
+  private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+    if (verificarPalpite(14)){
+      jButton14.setText("X");
+      jButton14.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton14ActionPerformed
+
+  private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+    if (verificarPalpite(16)){
+      jButton16.setText("X");
+      jButton16.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton16ActionPerformed
+
+  private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+    if (verificarPalpite(17)){
+      jButton17.setText("X");
+      jButton17.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton17ActionPerformed
+
+  private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+    if (verificarPalpite(19)){
+      jButton19.setText("X");
+      jButton19.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton19ActionPerformed
+
+  private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+    if (verificarPalpite(20)){
+      jButton20.setText("X");
+      jButton20.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton20ActionPerformed
+
+  private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
+    if (verificarPalpite(21)){
+      jButton21.setText("X");
+      jButton21.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton21ActionPerformed
+
+  private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
+    if (verificarPalpite(22)){
+      jButton22.setText("X");
+      jButton22.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton22ActionPerformed
+
+  private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
+    if (verificarPalpite(23)){
+      jButton23.setText("X");
+      jButton23.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton23ActionPerformed
+
+  private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
+    if (verificarPalpite(25)){
+      jButton25.setText("X");
+      jButton25.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton25ActionPerformed
+
+  private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
+    if (verificarPalpite(26)){
+      jButton26.setText("X");
+      jButton26.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton26ActionPerformed
+
+  private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
+    if (verificarPalpite(27)){
+      jButton27.setText("X");
+      jButton27.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton27ActionPerformed
+
+  private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
+    if (verificarPalpite(28)){
+      jButton28.setText("X");
+      jButton28.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton28ActionPerformed
+
+  private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
+    if (verificarPalpite(29)){
+      jButton29.setText("X");
+      jButton29.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton29ActionPerformed
+
+  private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
+    if (verificarPalpite(30)){
+      jButton30.setText("X");
+      jButton30.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton30ActionPerformed
+
+  private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
+    if (verificarPalpite(31)){
+      jButton31.setText("X");
+      jButton31.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton31ActionPerformed
+
+  private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
+    if (verificarPalpite(32)){
+      jButton32.setText("X");
+      jButton32.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton32ActionPerformed
+
+  private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
+    if (verificarPalpite(33)){
+      jButton33.setText("X");
+      jButton33.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton33ActionPerformed
+
+  private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
+    if (verificarPalpite(35)){
+      jButton35.setText("X");
+      jButton34.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton35ActionPerformed
+
+  private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
+    if (verificarPalpite(38)){
+      jButton38.setText("X");
+      jButton38.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton38ActionPerformed
+
+  private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
+    if (verificarPalpite(39)){
+      jButton39.setText("X");
+      jButton39.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton39ActionPerformed
+
+  private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
+    if (verificarPalpite(40)){
+      jButton40.setText("X");
+      jButton40.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton40ActionPerformed
+
+  private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
+    if (verificarPalpite(41)){
+      jButton41.setText("X");
+      jButton41.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton41ActionPerformed
+
+  private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
+    if (verificarPalpite(42)){
+      jButton42.setText("X");
+      jButton42.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton42ActionPerformed
+
+  private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
+    if (verificarPalpite(43)){
+      jButton43.setText("X");
+      jButton43.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton43ActionPerformed
+
+  private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
+    if (verificarPalpite(44)){
+      jButton44.setText("X");
+      jButton42.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton44ActionPerformed
+
+  private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
+    if (verificarPalpite(45)){
+      jButton45.setText("X");
+      jButton45.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton45ActionPerformed
+
+  private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
+    if (verificarPalpite(46)){
+      jButton46.setText("X");
+      jButton46.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton46ActionPerformed
+
+  private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
+    if (verificarPalpite(47)){
+      jButton47.setText("X");
+      jButton47.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton47ActionPerformed
+
+  private void jButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton48ActionPerformed
+    if (verificarPalpite(48)){
+      jButton48.setText("X");
+      jButton48.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton48ActionPerformed
+
+  private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
+    if (verificarPalpite(49)){
+      jButton49.setText("X");
+      jButton49.setEnabled(false);
+    }
+  }//GEN-LAST:event_jButton49ActionPerformed
 
   /**
    * @param args the command line arguments
@@ -273,6 +859,37 @@ public class Tela extends javax.swing.JFrame {
         new Tela().setVisible(true);
       }
     });
+  }
+  
+  public boolean verificarPalpite(Integer numero){
+    boolean acertou = false;
+    boolean afundou = false;
+    BatalhaNaval nv = new BatalhaNaval();
+    Iterator<Navio> i = nv.getNavios().iterator();
+    while (i.hasNext() && !acertou) {
+      Navio nav = i.next();
+      Iterator<Integer> j = nav.getPosicoes().iterator();
+      while (j.hasNext()) {
+        Integer pos = j.next();
+        if (pos.equals(numero)) {
+          j.remove();
+          acertou = true;
+          if (nav.getPosicoes().isEmpty())
+            afundou = true;
+          break;
+        } else
+          acertou = false;
+      } 
+    }
+    
+    if (acertou && afundou)
+      JOptionPane.showMessageDialog(rootPane, "Voce afundou um navio");
+    else if (acertou)
+      JOptionPane.showMessageDialog(rootPane, "Correto");
+    else
+      JOptionPane.showMessageDialog(rootPane, "Errado");
+
+    return acertou;
   }
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
